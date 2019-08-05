@@ -2,13 +2,13 @@ from django.shortcuts import render,redirect
 import datetime as dt
 from django.contrib.auth.decorators import login_required
 from . forms import UserRegistrationForm,AddProjectForm,UserUpdateForm,proForm
-from . models import Project,Profile
+from . models import Projects,Profile
 from django.http import HttpResponse, Http404,HttpResponseRedirect
 # Create your views here.
 
 
 def home(request):
-    projects=Project.get_projects()
+    projects=Projects.get_projects()
     return render(request, 'home.html',{"projects":projects})
 
 

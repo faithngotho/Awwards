@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import Project,Profile
+from .models import Projects,Profile
 
 class UserRegistrationForm(UserCreationForm):
     email =forms.EmailField()
@@ -12,7 +12,7 @@ class UserRegistrationForm(UserCreationForm):
 
 class AddProjectForm(forms.ModelForm):
      class Meta:
-        model = Project
+        model = Projects
         exclude = ['pub_date']
         
 class UserUpdateForm(forms.ModelForm):

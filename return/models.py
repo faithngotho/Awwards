@@ -25,7 +25,7 @@ class Profile(models.Model):
     def delete_profile(self):
         self.delete()
 
-class Project(models.Model):
+class Projects(models.Model):
     title = models.CharField(max_length =30)
     image = models.ImageField(default = 'default.jpg',upload_to='images/')
     description = models.CharField(max_length =200)
