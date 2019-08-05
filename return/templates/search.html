@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+
+{% block content %}
+<div class="container">
+
+    <div> {% if project%}
+        <h2>Found {{ project|length }} project(s) for the project, {{message}}</h2>
+        {% else %}
+        <h2> Found 0 projects , {{message}}</h2>
+        {% endif %}
+
+    </div>
+
+    {% if project %}
+    {% for project_item in project %}
+
+    <div class="row-md-12">
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="card ">
+
+                <p>{{ project_item.title}}</p>
+                <img src="{{ project_item.image.url }}" height="250px" width="350px" alt="Image" />
+                <p>{{ project_item.description }}</p>
+                <p><i class="fa fa-heart"></i>{{ project_item.ratings }}</p>
+                <p>by {{ project_item.profile }}</p>
+                <p>on {{ project_item.pub_date }}</p>
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    {% endfor %}
+    {% endif %}
+</div>
+
+{% endblock %}
