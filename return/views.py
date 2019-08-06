@@ -48,7 +48,7 @@ def add_project(request):
 
     else:
         form = AddProjectForm()
-    return render(request, 'newproject.html',{"form": form})
+    return render(request, 'new_project.html',{"form": form})
 
 @login_required(login_url='/accounts/login/')
 def profile(request):
