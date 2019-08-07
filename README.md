@@ -1,17 +1,24 @@
 ## Awwards
 
 ## Description
+
 This an application whereby a user is able to see on previous projects done therebefore,search a project and also add projects.
 
 ## By Faith Ngotho
 
 ## Link to live site
+
  https://ngothoawwards.herokuapp.com/
  
 
 ## BDD
-Behaviour	Input	Output
-Add project Click on login 
+
+|Behaviour     	  |Input	                |Output                      |
+|-----------------|----------------------|----------------------------|
+|Add project      | Click on login       |New project is added        |
+|Search project   |Title of the project  | Project and it content     |
+|Rate the project |Project title         |Rating is done              |
+
 ## Requirements
 1. python3.6
 2. pip
