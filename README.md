@@ -11,7 +11,7 @@ This an application whereby a user is able to see on previous projects done ther
 
 ## BDD
 Behaviour	Input	Output
-Update Profile	Click update profile button	Image is dipalyed on the profile page
+Add project Click on login 
 ## Requirements
 1. python3.6
 2. pip
@@ -19,13 +19,13 @@ Update Profile	Click update profile button	Image is dipalyed on the profile page
 
 ## Setup
 1. Clone the application using git clone(this copies the app onto your device). In your terminal:
-a. $ git clone https://github.com/faithngotho/awwards.git
-b. $ cd Instagram
-c. Installation
-2. Create and activate your virtual environment:
-a. $ python3.6 -m venv
-b. $ source virtual/bin/activate
-(c. virtual)$ pip install -r requirements.txt
+2. $ git clone https://github.com/faithngotho/awwards.git
+3. $ cd Instagram
+4. Installation
+5. Create and activate your virtual environment:
+6. $ python3.6 -m venv
+7. $ source virtual/bin/activate
+8. (virtual)$ pip install -r requirements.txt
 
 ## Technologies
 1. Python 3.6
